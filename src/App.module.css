@@ -1,0 +1,26 @@
+.container {  
+  margin-top: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 0.5rem;
+}
+
+.trackLine {
+  flex:1;  
+  background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 0);
+  background-size: 50px 30px;
+}
+
+.statusItem {
+  background-color: var(--gray-100);
+  border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
